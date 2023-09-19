@@ -1,0 +1,17 @@
+header{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: red;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+}
+
+li{
+    margin: 1rem;
+}
