@@ -1,0 +1,19 @@
+$offWhite: 	hsl(45, 29%, 97%);
+
+header{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: $offWhite;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+}
+
+li{
+    margin: 1rem;
+}
