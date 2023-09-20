@@ -1,0 +1,29 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.aboutContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    section{
+        display: flex;
+        flex-direction: column;
+    
+        max-width: 90%;
+    
+        h2{
+            text-align: center;
+        }
+        img{
+            max-width: 90%;
+            margin: auto;
+            object-fit:contain;
+        }
+    }
+}
+

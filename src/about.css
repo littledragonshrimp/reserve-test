@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.aboutContainer section {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+}
+.aboutContainer section h2 {
+  text-align: center;
+}
+.aboutContainer section img {
+  max-width: 90%;
+  margin: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}/*# sourceMappingURL=about.css.map */
