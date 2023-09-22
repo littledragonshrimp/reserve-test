@@ -1,6 +1,8 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+
+import about1 from "../images/about-1.jpeg";
+import about2 from "../images/about-2.jpeg";
+import about3 from "../images/about-3.jpeg";
 
 import "../about.css";
 
@@ -10,7 +12,7 @@ function about() {
       <article className="aboutContainer">
         <section className="card">
           <h2>INVESTMENT STRATEGY</h2>
-          <img src="../public/about-1.jpeg" alt="" srcset="" />
+          <img src={about1} alt="" srcset="" />
           <p>
             Our strategy is simple: We treat your investment dollars like our
             own, always. We seek fair risk adjusted opportunistic returns.
@@ -19,7 +21,7 @@ function about() {
 
         <section className="card">
           <h2>OUR TENANTS</h2>
-          <img src="../public/about-2.jpeg" alt="" srcset="" />
+          <img src={about2} alt="" srcset="" />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure
             consequuntur nesciunt eos porro! Quis, autem fugit natus suscipit
@@ -30,7 +32,7 @@ function about() {
 
         <section className="card">
           <h2>OUR BROKERS</h2>
-          <img src="../public/about-3.jpeg" alt="" srcset="" />
+          <img src={about3} alt="" srcset="" />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure
             consequuntur nesciunt eos porro! Quis, autem fugit natus suscipit
