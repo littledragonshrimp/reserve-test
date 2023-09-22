@@ -3,6 +3,7 @@ import "../nav.css";
 
 import Hamburger from "./Hamburger";
 import { Link } from "react-router-dom";
+import navbarLogo from "../Images/rcpLogoSmall.png";
 
 function Navbar({ pageType }) {
   return (
@@ -12,7 +13,8 @@ function Navbar({ pageType }) {
           <div className="logo">
             <Link to="/">
               <img
-                src="../public/rcpLogoSmall.png"
+                // src="../public/rcpLogoSmall.png"
+                src={navbarLogo}
                 alt="Reserve Capital Partners Logo"
                 srcset=""
                 className="navLogo"

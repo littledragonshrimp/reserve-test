@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
-import Home from "../pages/home";
+import Home from "../pages/Home";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Portfolio from "../pages/Portfolio";
@@ -14,6 +14,7 @@ import ErrorPage from "../error-page";
 
 function Page({ pageType }) {
   let component; // blank component that gets filled in the switch statements
+  let hero;
 
   switch (pageType) {
     case "Home":
@@ -55,6 +56,7 @@ function Page({ pageType }) {
   return (
     <>
       <Navbar pageType={pageType} />
+      {hero}
       {component}
       <Footer />
     </>

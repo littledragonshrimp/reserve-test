@@ -1,5 +1,6 @@
 import React from "react";
 import "../footer.css";
+import navbarLogo from "../Images/rcpLogoSmall.png";
 
 function Footer() {
   const year = new Date().getFullYear();
@@ -10,12 +11,7 @@ function Footer() {
         <ul>
           <li>
             <a href="/">
-              <img
-                src="../public/rcpLogoSmall.png"
-                alt=""
-                srcset=""
-                className="navLogo"
-              />
+              <img src={navbarLogo} alt="" srcset="" className="navLogo" />
             </a>
           </li>
           <li>

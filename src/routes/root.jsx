@@ -3,11 +3,11 @@ import RouteSearch from "../components/RouteSearch";
 import Footer from "../components/Footer";
 
 export default function Root() {
-    return (
-      <>
+  return (
+    <>
       <Navbar />
-        <RouteSearch/>
-      <Footer/>
-      </>
-    );
-  }
+      <RouteSearch />
+      <Footer />
+    </>
+  );
+}
