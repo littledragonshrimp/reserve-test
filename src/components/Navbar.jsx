@@ -1,22 +1,60 @@
-import React from 'react'
-import '../nav.css'
+import React from "react";
+import "../nav.css";
 
-function Navbar() {
-    return(
+import Hamburger from "./Hamburger";
+import { Link } from "react-router-dom";
+
+function Navbar({ pageType }) {
+  return (
     <>
-    <header>
+      <header>
         <nav>
-                <a href="/"><img src="../public/rcpLogoSmall.png" alt="Reserve Capital Partners Logo" srcset="" className='navLogo'/></a>
-            <ul>
-                <li><a href="/about">About</a></li>
-                <li><a href="/team">Team</a></li>
-                <li><a href="/contact">Contact</a></li>
-                <li><a href="https://investors.reservecappartners.com/">Investors</a></li>
-            </ul>
+          <div className="logo">
+            <Link to="/">
+              <img
+                src="../public/rcpLogoSmall.png"
+                alt="Reserve Capital Partners Logo"
+                srcset=""
+                className="navLogo"
+              />
+            </Link>
+          </div>
+
+          <ul>
+            <li className={pageType === "About" ? "active" : ""}>
+              <Link to="/about">About</Link>
+            </li>
+
+            <li className={pageType === "Team" ? "active" : ""}>
+              <Link to="/team">Team</Link>
+            </li>
+
+            <li className={pageType === "Portfolio" ? "active" : ""}>
+              <Link to="/portfolio">Portfolio</Link>
+            </li>
+
+            <li className={pageType === "Press" ? "active" : ""}>
+              <Link to="/press">Press</Link>
+            </li>
+
+            <li className={pageType === "Contact" ? "active" : ""}>
+              <Link to="/contact">Contact</Link>
+            </li>
+
+            <li>
+              <a
+                target="_blank"
+                href="https://investors.reservecappartners.com/"
+              >
+                Investors
+              </a>
+            </li>
+          </ul>
+          <Hamburger />
         </nav>
-    </header>
+      </header>
     </>
-    )
+  );
 }
 
-export default Navbar
+export default Navbar;

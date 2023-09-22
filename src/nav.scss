@@ -1,52 +1,133 @@
-$offWhite: 	hsl(45, 29%, 97%);
+$offWhite: hsl(45, 29%, 97%);
 
-nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 2rem 1rem 1rem 2rem;
-    img{
-       width: 80%;
-       height: 2rem;
-    }
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 1rem 1rem 2rem;
+  img {
+    width: 80%;
+    height: 2rem;
+    margin-right: auto;
+  }
 }
 
-header{
-    display: flex;
-    flex-direction: row;
-    color: white;
-    background-color: $offWhite;
-   width: 100%;
-   ul{
-    display: flex;
+.hamburger {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  z-index: 10;
+  margin-bottom: 0.4rem;
+}
+
+.hamburger:active {
+  scale: 1.2;
+}
+.burger {
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 10px;
+  background-color: black;
+  transform-origin: 1px;
+  transition: all 0.3s linear;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  background-color: $offWhite;
+  width: 100%;
+  ul {
+    display: none;
     flex-direction: row;
     list-style: none;
     justify-content: space-evenly;
     align-items: center;
-    img{
-        width: 8rem;
+    img {
+      width: 8rem;
     }
-    li{
-        margin: 1rem;
-        font-size: .7rem;
-        a{
-            color: cornflowerblue;
-        }
+    li {
+      margin: 1rem;
+      font-size: 0.7rem;
+      a {
+        color: cornflowerblue;
+      }
     }
 
-.logoLi{
-    margin-right: auto;
+    .logo img {
+      margin-right: auto;
+    }
+    a:hover {
+      font-size: 0.8rem;
+      transition: 0.4s;
+    }
+  }
 }
-a:hover{
-    font-size: .8rem;
-    transition: .4s;
+
+.active a {
+  color: skyblue;
+  text-decoration: underline;
+  font-size: 1rem;
+  pointer-events: none;
 }
 
+@media screen and (min-width: 700px) {
+  header ul {
+    display: flex;
+  }
+
+  .hamburger,
+  .burger {
+    display: none;
+  }
 }
-}
 
+//// Hamburger and X section
+// :root {
+//   --bar-width: 60px;
+//   --bar-height: 8px;
+//   --hamburger-gap: 6px;
+//   --forground: #333;
+//   --background: $offWhite;
+// }
 
+// .hamburger-menu::before,
+// .hamburger-menu::after,
+// .hamburger-menu input {
+//   content: "";
+//   width: var(--bar-width);
+//   height: var(--bar-height);
+//   background-color: var(--background);
+//   border-radius: 9999px;
+// }
 
+// .hamburger-menu {
+//   display: flex;
+//   flex-direction: column;
+//   gap: var(--hamburger-gap);
+//   width: max-content;
+//   position: absolute;
+//   top: 5px;
+//   left: 5px;
+// }
 
+// .hamburger-menu input {
+//   // appearance: none;
+//   padding: 0;
+//   margin: 0;
+//   outline: none;
+//   pointer-events: none;
+// }
 
+// .hamburger-menu input:checked {
+//   opacity: 0;
+//   width: 0;
+// }

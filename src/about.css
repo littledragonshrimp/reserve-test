@@ -5,9 +5,10 @@
 }
 
 .aboutContainer {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
 }
 .aboutContainer section {
@@ -17,10 +18,53 @@
 }
 .aboutContainer section h2 {
   text-align: center;
+  color: royalblue;
+  margin-bottom: 1rem;
 }
 .aboutContainer section img {
   max-width: 90%;
   margin: auto;
   -o-object-fit: contain;
      object-fit: contain;
+  max-height: 16rem;
+}
+.aboutContainer section p {
+  margin: 1rem;
+}
+
+.card {
+  background-color: rgb(146, 212, 238);
+  border-radius: 0.5rem;
+  padding: 1rem 2rem 1rem 2rem;
+  width: 100%;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-color: hsl(45, 29%, 97%);
+  padding-bottom: 2rem;
+}
+
+.teamCard {
+  background-color: rgb(95, 95, 245);
+}
+.teamCard h2 {
+  font-size: 1.2rem;
+}
+.teamCard h3 {
+  font-size: 0.7rem;
+}
+
+@media screen and (min-width: 700px) {
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
 }/*# sourceMappingURL=about.css.map */

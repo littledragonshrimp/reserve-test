@@ -1,13 +1,19 @@
-import React from 'react'
-import Navbar from './Navbar'
+import React from "react";
 
-function TeamBuilder() {
+import Team from "../pages/Team";
 
+function TeamBuilder({ firstName, lastName, imgSrc, title, blockNumber }) {
   return (
     <>
-    <div>TeamBuilder</div>
+      <div className={`Team${blockNumber} teamCard`}>
+        <img src={`${imgSrc}`} alt="" />
+        <h2>
+          {firstName} {lastName}
+        </h2>
+        <h3> {title}</h3>
+      </div>
     </>
-  )
+  );
 }
 
-export default TeamBuilder
+export default TeamBuilder;
