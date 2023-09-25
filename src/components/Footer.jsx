@@ -9,11 +9,10 @@ function Footer() {
     <>
       <footer>
         <ul>
-          <li>
-            <a href="/">
-              <img src={navbarLogo} alt="" srcset="" className="navLogo" />
-            </a>
-          </li>
+          <a href="/">
+            <img src={navbarLogo} alt="" srcset="" className="navLogo" />
+          </a>
+          <li></li>
           <li>
             <a href="/about">About</a>
           </li>

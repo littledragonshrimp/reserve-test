@@ -1,5 +1,7 @@
 $offWhite: hsl(45, 29%, 97%);
 footer {
+  display: flex;
+  justify-content: center;
   background-color: $offWhite;
   img {
     width: 80%;

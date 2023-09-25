@@ -1,4 +1,6 @@
 footer {
+  display: flex;
+  justify-content: center;
   background-color: hsl(45, 29%, 97%);
 }
 footer img {
