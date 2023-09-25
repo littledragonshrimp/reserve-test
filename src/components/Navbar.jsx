@@ -3,7 +3,7 @@ import "../nav.css";
 
 import Hamburger from "./Hamburger";
 import { Link } from "react-router-dom";
-import navbarLogo from "../Images/rcpLogoSmall.png";
+import navbarLogo from "/assets/images/rcpLogoSmall.png";
 
 function Navbar({ pageType }) {
   return (

@@ -6,7 +6,7 @@ function TeamBuilder({ firstName, lastName, imgSrc, title, blockNumber }) {
   return (
     <>
       <div className={`Team${blockNumber} teamCard`}>
-        <img src={`${imgSrc}`} alt="" />
+        <img src={imgSrc} alt="" />
         <h2>
           {firstName} {lastName}
         </h2>

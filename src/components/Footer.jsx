@@ -1,6 +1,6 @@
 import React from "react";
 import "../footer.css";
-import navbarLogo from "../Images/rcpLogoSmall.png";
+import navbarLogo from "/assets/images/rcpLogoSmall.png";
 
 function Footer() {
   const year = new Date().getFullYear();

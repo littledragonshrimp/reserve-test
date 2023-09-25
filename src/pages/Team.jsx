@@ -1,8 +1,6 @@
 import React from "react";
 import "../about.css";
 
-import Rachel from "../Images/teamPics/RACHELMCCREADY.jpeg";
-
 import TeamBuilder from "../components/TeamBuilder";
 
 function Team() {
@@ -15,7 +13,7 @@ function Team() {
       blockNumber: "1",
     },
     {
-      imgSrc: { Rachel },
+      imgSrc: "RACHELMCCREADY",
       firstName: "RACHEL",
       lastName: "MCCREADY",
       title: "Chief Executive Officer",

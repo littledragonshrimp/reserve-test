@@ -1,8 +1,8 @@
 import React from "react";
 
-import about1 from "../images/about1.jpeg";
-import about2 from "../images/about2.jpeg";
-import about3 from "../images/about3.jpeg";
+import about1 from "/assets/images/about1.jpeg";
+import about2 from "/assets/images/about2.jpeg";
+import about3 from "/assets/images/about3.jpeg";
 
 import "../about.css";
 
@@ -12,6 +12,7 @@ function about() {
       <article className="aboutContainer">
         <section className="card">
           <h2>INVESTMENT STRATEGY</h2>
+
           <img src={about1} alt="" srcset="" />
           <p>
             Our strategy is simple: We treat your investment dollars like our
